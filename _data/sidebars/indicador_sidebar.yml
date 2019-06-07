@@ -1,0 +1,131 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: Indicadores
+  levels: one
+  folders:
+  
+  - title: Outcome 1
+    output: web
+    folderitems:
+    - title: Indicador OC1_2
+      url: /indicador_p_11.html
+      output: web
+    - title: Indicador OC1_3
+      url: /indicador_p12.html
+      output: web
+    - title: Indicador OC1_6
+      url: /indicador_p13.html
+      output: web
+    - title: Indicador OP12_2
+      url: /indicador_p14.html
+      output: web
+    - title: Indicador OP12_3
+      url: /indicador_p15.html
+      output: web
+    - title: Indicador OP12_4
+      url: /indicador_p16.html
+      output: web
+    - title: Indicador OP12_5
+      url: /indicador_p17.html
+      output: web	  
+    - title: Indicador OP11_2
+      url: /indicador_r11.html
+      output: web
+    - title: Indicador OP11_5
+      url: /indicador_r12.html
+      output: web
+    - title: Indicador OP13_3
+      url: /indicador_r13.html
+      output: web	
+    - title: Indicador OP14_2
+      url: /indicador_r14.html
+      output: web
+    - title: Indicador OP12_1
+      url: /indicador_r15.html
+      output: web  
+
+  - title: Outcome 2 
+    output: web
+    folderitems:
+    - title: Indicador OC2_1
+      url: /indicador_p21.html
+      output: web
+    - title: Indicador OC2_2
+      url: /indicador_p22.html
+      output: web
+    - title: Indicador OP21_2
+      url: /indicador_r21.html
+      output: web
+    - title: Indicador OP21_4
+      url: /indicador_r22.html
+      output: web
+    - title: Indicador OP22
+      url: /indicador_r23.html
+      output: web
+    - title: Indicador OP23_1
+      url: /indicador_r24.html
+      output: web
+    - title: Indicador OP23_2
+      url: /indicador_r25.html
+      output: web
+    - title: Indicador OP24_2
+      url: /indicador_r26.html
+      output: web
+    - title: Indicador OP24_3
+      url: /indicador_r27.html
+      output: web
+    - title: Indicador OP23_3
+      url: /indicador_r28.html
+      output: web
+    - title: Indicador OP24_1
+      url: /indicador_r29.html
+      output: web
+    - title: Indicador OP24_4
+      url: /indicador_r30.html
+      output: web	  
+                      
+  - title: Outcome 3
+    output: web
+    folderitems:
+    - title: Indicador OC3_1
+      url: /indicador_p31.html
+      output: web
+    - title: Indicador OC3_2
+      url: /indicador_p32.html
+      output: web
+    - title: Indicador OC3_3
+      url: /indicador_p33.html
+      output: web	
+    - title: Indicador OP32_1
+      url: /indicador_p34.html
+      output: web
+    - title: Indicador OP32_2
+      url: /indicador_p35.html
+      output: web
+    - title: Indicador OP32_3
+      url: /indicador_p36.html
+      output: web	
+    - title: Indicador OP32_4
+      url: /indicador_p37.html
+      output: web
+    - title: Indicador OP31_3
+      url: /indicador_r31.html
+      output: web	  
+
+  - title: Outcome 4
+    output: web
+    folderitems:
+    - title: Indicador OC4_1
+      url: /indicador_p_41.html
+      output: web
+    - title: Indicador OP41_4
+      url: /indicador_r41.html
+      output: web
+    - title: Indicador OP42_1
+      url: /indicador_r42.html
+      output: web
+    - title: Indicador OP42_2
+      url: /indicador_r43.html
+      output: web	  

@@ -1,0 +1,25 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: Indicador
+      url: /Indicador 
+    - title: Matriz de Resultados
+      url: /Matriz
+    - title: Anexos
+      url: /Anexo 	  
+
+#Topnav dropdowns
+
+#topnav_dropdowns:
+#- title: Topnav dropdowns
+  #folders:
+    #- title: Anexos
+      #folderitems:
+        #- title: Contactos
+         # url: /indicador_b13.html
+        #- title: Bases de Datos
+         # url: /indicador_b14.html
+        #- title: Instrumentos
+          #url: /indicador_b15.html

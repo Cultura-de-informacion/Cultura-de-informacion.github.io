@@ -1,37 +1,114 @@
+repository: tomjoht/documentation-theme-jekyll
+
+output: web
+# this property is useful for conditional filtering of content that is separate from the PDF.
+
+topnav_title: Línea Base de Indicadores - Unicef
+# this appears on the top navigation bar next to the home button
+
+site_title: Indicadores - Unicef
+# this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+company_name: Fundación ARU
+# this appears in the footer
+
+github_editme_path: https://arufoundation.github.io/unicef-lb/
+# if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
+
+# gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
+# if you're using GitLab, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
+
+disqus_shortname: idratherbewriting
+# if you're using disqus for comments, add the shortname here. if not, leave this value blank.
+
+google_analytics: UA-66296557-1
+# if you have google-analytics ID, put it in. if not, edit this value to blank.
+
+host: 127.0.0.1
+# the preview server used. Leave as is.
+
+port: 4000
+# the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
 exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
+  - .idea/
+  - .gitignore
+# these are the files and directories that jekyll will exclude from the build
 
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
+#feedback_subject_line: Jekyll documentation theme
 
+#feedback_email: tomjoht@gmail.com
+# used as a contact email for the Feedback link in the top navigation bar
 
-# Site settings
-title: Plataforma de Microdatos y Encuestas
-subtitle: "Fundación Aru"
-url: "cultura-de-informacion.github.io" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: ""
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+# feedback_disable: true
+# if you uncomment the previous line, the Feedback link gets removed
 
-# Build settings
+# feedback_text: "Need help?"
+# if you uncomment the previous line, it changes the Feedback text
+
+# feedback_link: "http://helpy.io/"
+# if you uncomment the previous line, it changes where the feedback link points to
+
+highlighter: rouge
+# library used for syntax highlighting
+
 markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+collections:
+  tooltips:
+    output: false
+# collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+  -
+    scope:
+      path: ""
+      type: "tooltips"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      tooltip: true
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      search: true
+      sidebar: home_sidebar
+      topnav: topnav
+
+# these are defaults used for the frontmatter for these file types
+
+sidebars:
+- home_sidebar
+- mydoc_sidebar
+- indicador_sidebar
+- other
+
+description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
+# the description is used in the feed.xml file
+
+# needed for sitemap.xml file only
+# url: http://idratherbewriting.com
+# baseurl: /documentation-theme-jekyll
